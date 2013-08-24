@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ project.name }}</title>
+</head>
+
+<body>
+<h1>{{ project.name }}</h1>
+<iframe width="560" height="315" src={{ project.url }} frameborder="0" allowfullscreen></iframe>
+<p> {{ project.description }} </p>
+{% load static %} <img width="560" height="315" src="{% static "video/{{ Project.cover }}" %}" alt="Hi!" />
+</body>
+
+</html>
+

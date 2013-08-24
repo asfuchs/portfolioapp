@@ -1,0 +1,11 @@
+{% if latest_game_list %}
+    <ul>
+    {% for Project in latest_game_list %}
+        <img border="0" src={{ Game.cover }} alt="sheep">
+
+        <li><a href="/game/{{ Project.id }}/">{{ Game.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No games are available.</p>
+{% endif %}
